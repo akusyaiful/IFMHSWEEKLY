@@ -221,28 +221,6 @@ main {
   gap: 32px;
 }
 
-.page-title-wrap {
-  text-align: center;
-  animation: fadeInUp 0.8s 0.15s ease both;
-}
-
-.page-title {
-  font-family: 'Pirata One', cursive;
-  font-size: clamp(1.8rem, 5vw, 3rem);
-  color: var(--gold);
-  text-shadow: 0 0 20px rgba(245,197,24,0.35), 2px 2px 0 var(--red-dark);
-  letter-spacing: 3px;
-}
-
-.page-subtitle {
-  font-family: 'Cinzel', serif;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  color: rgba(244,228,176,0.5);
-  text-transform: uppercase;
-  margin-top: 6px;
-}
-
 .add-btn-wrap {
   margin-bottom: 16px;
   animation: fadeInUp 0.8s 0.25s ease both;
