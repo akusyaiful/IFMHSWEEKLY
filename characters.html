@@ -2,93 +2,135 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/characters.css" />
     <title>Characters - One Piece</title>
   </head>
   <body>
+    <div class="ocean-bg">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+    </div>
+
+    <div class="jolly-roger-deco">☠</div>
+
     <header>
-      <h1 align="center">Characters</h1>
-      <table cellspacing="0" cellpadding="10" align="center">
-        <tr>
-          <td><a href="index.html">Home</a></td>
-          <td><a href="characters.html">Characters</a></td>
-          <td><a href="about.html">About</a></td>
-          <td><a href="seasons.html">Seasons</a></td>
-        </tr>
-      </table>
+      <div class="header-top">
+        <div class="skull-icon">☠</div>
+        <h1>One Piece World</h1>
+        <div class="skull-icon">☠</div>
+      </div>
+      <nav>
+        <table cellspacing="0" cellpadding="10" align="center">
+          <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="characters.html">Characters</a></td>
+            <td><a href="about.html">About</a></td>
+            <td><a href="seasons.html">Seasons</a></td>
+          </tr>
+        </table>
+      </nav> 
     </header>
 
-    <a href="add-data.html" align="center">
-      <button>Add Data</button>
-    </a>
+    <div class="page-title-wrap">
+      <h2 class="page-title">⚔ Straw Hat Crew ⚔</h2>
+      <p class="page-subtitle">Wanted pirates sailing the Grand Line</p>
+    </div>
 
-    <table border="1" cellspacing="0" cellpadding="10" align="center">
-      <tr>
-        <th rowspan="2">No</th>
-        <th rowspan="2">Name</th>
-        <th rowspan="2">Photo</th>
-        <th colspan="3">Profile</th>
-      </tr>
-      <tr align="center">
-        <td>Pirates</td>
-        <td>Debut</td>
-        <td>Devil Fruit / Power</td>
-      </tr>
-      <tr align="center">
-        <td>1</td>
-        <td>Luffy</td>
-        <td>
-          <img src="assets/images/luffy.jpeg" alt="luffy" width="100" />
-        </td>
-        <td>Straw Hat Pirates</td>
-        <td>1st Episode</td>
-        <td>Gomu gomu</td>
-      </tr>
-      <tr align="center">
-        <td>2</td>
-        <td>Zoro</td>
-        <td>
-          <img src="assets/images/zoro.webp" alt="zoro" width="100" />
-        </td>
-        <td>Straw Hat Pirates</td>
-        <td>1st Episode</td>
-        <td>Santoryu</td>
-      </tr>
-      <tr align="center">
-        <td>3</td>
-        <td>Nami</td>
-        <td>
-          <img src="assets/images/nami.jpeg" alt="nami" width="100" />
-        </td>
-        <td>1st Episode</td>
-        <td>Straw Hat Pirates</td>
-        <td>Clima-Tact</td>
-      </tr>
-    </table>
+    <div class="add-btn-wrap">
+      <a href="add-data.html" class="btn-add">
+        <span class="btn-icon">＋</span> Add Character
+      </a>
+    </div>
 
-    <hr />
+    <div class="table-wrap">
+      <table class="char-table">
+        <thead>
+          <tr>
+            <th rowspan="2" class="th-no">No</th>
+            <th rowspan="2" class="th-name">Name</th>
+            <th rowspan="2" class="th-photo">Photo</th>
+            <th colspan="3" class="th-profile-group">Profile</th>
+          </tr>
+          <tr>
+            <td class="th-sub">Pirates</td>
+            <td class="th-sub">Debut</td>
+            <td class="th-sub">Devil Fruit / Power</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="td-name">Luffy</td>
+            <td class="td-photo">
+              <div class="photo-frame">
+                <img src="assets/images/luffy.jpeg" alt="luffy"/>
+              </div>
+            </td>
+            <td><span class="crew-badge">Straw Hat Pirates</span></td>
+            <td>1st Episode</td>
+            <td><span class="power-tag">Gomu Gomu</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="td-name">Zoro</td>
+            <td class="td-photo">
+              <div class="photo-frame">
+                <img src="assets/images/zoro.webp" alt="zoro"/>
+              </div>
+            </td>
+            <td><span class="crew-badge">Straw Hat Pirates</span></td>
+            <td>1st Episode</td>
+            <td><span class="power-tag">Santoryu</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="td-name">Nami</td>
+            <td class="td-photo">
+              <div class="photo-frame">
+                <img src="assets/images/nami.jpeg" alt="nami"/>
+              </div>
+            </td>
+            <td><span class="crew-badge">Straw Hat Pirates</span></td>
+            <td>1st Episode</td>
+            <td><span class="power-tag">Clima-Tact</span>t</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <table border="1" cellspacing="0" cellpadding="10" align="center">
-      <tr>
-        <td>1,1</td>
-        <td>1,2</td>
-        <td>1,3</td>
-        <td>1,4</td>
-      </tr>
-      <tr>
-        <td>2,1</td>
-        <td colspan="2" rowspan="2" align="center">?</td>
-        <td>2,4</td>
-      </tr>
-      <tr>
-        <td>3,1</td>
-        <td>3,4</td>
-      </tr>
-      <tr>
-        <td>4,1</td>
-        <td>4,2</td>
-        <td>4,3</td>
-        <td>4,4</td>
-      </tr>
-    </table>
+    <div class="divider"><span>⚓</span></div>
+
+    <div class="section-label">Secret Log</div>
+
+    <div class="table-wrap">
+      <table class="mystery-table">
+        <tbody>
+          <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+          </tr>
+          <tr>
+            <td>2,1</td>
+            <td colspan="2" rowspan="2" class="td-mystery">?</td>
+            <td>2,4</td>
+          </tr>
+          <tr>
+            <td>3,1</td>
+            <td>3,4</td>
+          </tr>
+          <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
