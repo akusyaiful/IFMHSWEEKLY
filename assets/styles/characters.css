@@ -215,7 +215,6 @@ nav table td a.active::after {
 main {
   position: relative;
   z-index: 10;
-  max-width: 960px;
   margin: 50px auto;
   padding: 0 20px 80px;
   display: flex;

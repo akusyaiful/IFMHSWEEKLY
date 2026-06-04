@@ -26,10 +26,10 @@
       <nav>
         <table cellspacing="0" cellpadding="0">
           <tr>
-            <td><a href="index.html">Home</a></td>
-            <td><a href="characters.html">Characters</a></td>
-            <td><a href="about.html">About</a></td>
-            <td><a href="seasons.html">Seasons</a></td>
+            <td><a href="index.php">Home</a></td>
+            <td><a href="characters.php">Characters</a></td>
+            <td><a href="about.php">About</a></td>
+            <td><a href="seasons.php">Seasons</a></td>
           </tr>
         </table>
       </nav>

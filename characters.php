@@ -25,10 +25,10 @@
       <nav>
         <table cellspacing="0" cellpadding="10" align="center">
           <tr>
-            <td><a href="index.html">Home</a></td>
-            <td><a href="characters.html">Characters</a></td>
-            <td><a href="about.html">About</a></td>
-            <td><a href="seasons.html">Seasons</a></td>
+            <td><a href="index.php">Home</a></td>
+            <td><a href="characters.php">Characters</a></td>
+            <td><a href="about.php">About</a></td>
+            <td><a href="seasons.php">Seasons</a></td>
           </tr>
         </table>
       </nav> 
@@ -45,53 +45,33 @@
         <table class="char-table">
           <thead>
             <tr>
-              <th rowspan="2" class="th-no">No</th>
-              <th rowspan="2" class="th-name">Name</th>
-              <th rowspan="2" class="th-photo">Photo</th>
-              <th colspan="3" class="th-profile-group">Profile</th>
-            </tr>
-            <tr>
-              <td class="th-sub">Pirates</td>
-              <td class="th-sub">Debut</td>
-              <td class="th-sub">Devil Fruit / Power</td>
+              <th class="th-no">No</th>
+              <th class="th-name">Name</th>
+              <th class="th-nim">NIM</th>
+              <th class="th-prodi">Program Studi</th>
+              <th class="th-email">Email</th>
+              <th class="th-phone">Nomor HP</th>
+              <th class="th-photo">Foto</th>
+              <th class="th-action">Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td class="td-name">Luffy</td>
+              <td class="td-name">Muhammad Syaifullah</td>
+              <td class="td-nim">2023010101</td>
+              <td class="td-prodi">Informatika</td>
+              <td class="td-email">msyaifullah13@gmail.com</td>
+              <td class="td-phone">081234567890</td>
               <td class="td-photo">
                 <div class="photo-frame">
-                  <img src="assets/images/luffy.jpeg" alt="luffy"/>
+                  <img src="assets/images/muhammad.jpg" alt="muhammad"/>
                 </div>
               </td>
-              <td><span class="crew-badge">Straw Hat Pirates</span></td>
-              <td>1st Episode</td>
-              <td><span class="power-tag">Gomu Gomu</span></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td class="td-name">Zoro</td>
-              <td class="td-photo">
-                <div class="photo-frame">
-                  <img src="assets/images/zoro.webp" alt="zoro"/>
-                </div>
+              <td class="td-action">
+                <a href="edit-data.html" class="btn-edit">Edit</a>
+                <a href="delete-data.html" class="btn-delete">Delete</a>
               </td>
-              <td><span class="crew-badge">Straw Hat Pirates</span></td>
-              <td>1st Episode</td>
-              <td><span class="power-tag">Santoryu</span></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td class="td-name">Nami</td>
-              <td class="td-photo">
-                <div class="photo-frame">
-                  <img src="assets/images/nami.jpeg" alt="nami"/>
-                </div>
-              </td>
-              <td><span class="crew-badge">Straw Hat Pirates</span></td>
-              <td>1st Episode</td>
-              <td><span class="power-tag">Clima-Tact</span></td>
             </tr>
           </tbody>
         </table>
