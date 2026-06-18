@@ -57,17 +57,17 @@
           <tr>
             <td><label for="nama">Nama</label></td>
             <td>:</td>
-            <td><input type="text" name="nama" id="nama" /></td>
+            <td><input type="text" name="nama" id="nama" required /></td>
           </tr>
           <tr>
             <td><label for="nim">NIM</label></td>
             <td>:</td>
-            <td><input type="text" name="nim" id="nim" /></td>
+            <td><input type="text" name="nim" id="nim" required /></td>
           </tr>
           <tr>
             <td><label for="program_studi">Program Studi</label></td>
             <td>:</td>
-            <td><input type="text" name="program_studi" id="program_studi" /></td>
+            <td><input type="text" name="program_studi" id="program_studi" required /></td>
           </tr>
           <tr>
             <td><label for="email">Email</label></td>
@@ -77,7 +77,7 @@
           <tr>
             <td><label for="nomor_hp">Nomor HP/Phone</label></td>
             <td>:</td>
-            <td><input type="number" name="nomor_hp" id="nomor_hp" /></td>
+            <td><input type="number" name="nomor_hp" id="nomor_hp" required /></td>
           </tr>
           <tr>
             <td><label for="foto">Foto</label></td>
