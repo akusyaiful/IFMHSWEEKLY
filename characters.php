@@ -61,7 +61,7 @@ $data_mahasiswa = showData($query);
 
     <main>
       <div class="add-btn-wrap">
-        <a href="add-data.html" class="btn-add">
+        <a href="add-data.php" class="btn-add">
           <span class="btn-icon">＋</span> Add Character
         </a>
       </div>

@@ -293,6 +293,7 @@ form table tr td:nth-child(2) {
 
 form table input[type="text"],
 form table input[type="number"],
+form table input[type="email"],
 form table input[type="file"] {
   width: 100%;
   min-width: 240px;
@@ -309,6 +310,7 @@ form table input[type="file"] {
 }
 
 form table input[type="text"]:focus,
+form table input[type="email"]:focus,
 form table input[type="number"]:focus {
   border-color: var(--gold);
   box-shadow: 0 0 0 3px rgba(245,197,24,0.12), 0 0 16px rgba(245,197,24,0.08);
@@ -316,6 +318,7 @@ form table input[type="number"]:focus {
 }
 
 form table input[type="text"]::placeholder,
+form table input[type="email"]::placeholder,
 form table input[type="number"]::placeholder {
   color: rgba(244,228,176,0.3);
 }

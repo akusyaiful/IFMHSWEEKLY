@@ -1,3 +1,19 @@
+<?php
+  require 'function.php';
+
+  if(isset($_POST['submit'])){
+    if(addData($_POST) > 0){
+      echo "<script>
+        alert('Data berhasil ditambahkan');
+        window.location.href='characters.php';
+        </script>";
+    }else{
+      echo "<script>alert('Data gagal ditambahkan');</script>";
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,32 +52,37 @@
     </header>
 
     <main>
-      <form action="characters.html" method="post">
+      <form action="" method="post">
         <table cellpadding="5" align="center">
           <tr>
-            <td><label for="name">Name</label></td>
+            <td><label for="nama">Nama</label></td>
             <td>:</td>
-            <td><input type="text" name="name" id="name" /></td>
+            <td><input type="text" name="nama" id="nama" /></td>
           </tr>
           <tr>
-            <td><label for="photo">Photo</label></td>
+            <td><label for="nim">NIM</label></td>
             <td>:</td>
-            <td><input type="file" name="photo" id="photo" /></td>
+            <td><input type="text" name="nim" id="nim" /></td>
           </tr>
           <tr>
-            <td><label for="uts">UTS</label></td>
+            <td><label for="program_studi">Program Studi</label></td>
             <td>:</td>
-            <td><input type="number" name="uts" id="uts" /></td>
+            <td><input type="text" name="program_studi" id="program_studi" /></td>
           </tr>
           <tr>
-            <td><label for="uas">UAS</label></td>
+            <td><label for="email">Email</label></td>
             <td>:</td>
-            <td><input type="number" name="uas" id="uas" /></td>
+            <td><input type="email" name="email" id="email" /></td>
           </tr>
           <tr>
-            <td><label for="tugas">Tugas</label></td>
+            <td><label for="nomor_hp">Nomor HP/Phone</label></td>
             <td>:</td>
-            <td><input type="number" name="tugas" id="tugas" /></td>
+            <td><input type="number" name="nomor_hp" id="nomor_hp" /></td>
+          </tr>
+          <tr>
+            <td><label for="foto">Foto</label></td>
+            <td>:</td>
+            <td><input type="text" name="foto" id="foto" /></td>
           </tr>
           <tr>
             <td colspan="3">
