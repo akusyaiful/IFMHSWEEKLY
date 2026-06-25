@@ -98,7 +98,7 @@ $data_mahasiswa = showData($query);
                 </div>
               </td>
               <td class='td-action'>
-                <a href="edit-data.php?id=<?=  $row['id'] ?>" class="btn-edit">Edit</a>
+                <a href="update-data.php?id=<?=  $row['id'] ?>" class="btn-edit">Edit</a>
                 <a href="delete-data.php?id=<?=  $row['id'] ?>" class="btn-delete" onclick="return confirm('Are you sure?')">Delete</a>
               </td>
             </tr>
