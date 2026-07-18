@@ -85,4 +85,74 @@
 
     return mysqli_affected_rows($connection);
   }
+
+  function createUsersTable(){
+    global $connection;
+    $query = "CREATE TABLE IF NOT EXISTS users (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      username VARCHAR(100) NOT NULL,
+      email VARCHAR(100) NOT NULL UNIQUE,
+      password VARCHAR(255) NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )";
+    mysqli_query($connection, $query);
+  }
+
+  function registerUser($data){
+    global $connection;
+    createUsersTable();
+
+    $username = htmlspecialchars(stripslashes($data['username']));
+    $email = htmlspecialchars(strtolower($data['email']));
+    $password = mysqli_real_escape_string($connection, $data['password']);
+    $password_confirm = mysqli_real_escape_string($connection, $data['password_confirm']);
+
+    // Check if email already registered
+    $check = mysqli_query($connection, "SELECT email FROM users WHERE email = '$email'");
+    if(mysqli_fetch_assoc($check)){
+      return -1; // Email already exists
+    }
+
+    // Check password match
+    if($password !== $password_confirm){
+      return -2; // Passwords don't match
+    }
+
+    // Hash password
+    $password_hashed = password_hash($password, PASSWORD_DEFAULT);
+
+    $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password_hashed')";
+    mysqli_query($connection, $query);
+
+    return mysqli_affected_rows($connection);
+  }
+
+  function loginUser($data){
+    global $connection;
+    createUsersTable();
+
+    $email = htmlspecialchars(strtolower($data['email']));
+    $password = $data['password'];
+
+    $result = mysqli_query($connection, "SELECT * FROM users WHERE email = '$email'");
+    $row = mysqli_fetch_assoc($result);
+
+    // Check if user exists
+    if(!$row){
+      return -1; // User not found
+    }
+
+    // Verify password
+    if(!password_verify($password, $row['password'])){
+      return -2; // Wrong password
+    }
+
+    // Set session
+    $_SESSION['login'] = true;
+    $_SESSION['user_id'] = $row['id'];
+    $_SESSION['username'] = $row['username'];
+    $_SESSION['email'] = $row['email'];
+
+    return 1; // Login success
+  }
 ?>

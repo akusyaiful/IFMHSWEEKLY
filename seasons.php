@@ -29,6 +29,8 @@
             <td><a href="characters.php">Characters</a></td>
             <td><a href="about.php">About</a></td>
             <td><a href="seasons.php">Seasons</a></td>
+            <td><a href="login.php">Login</a></td>
+            <td><a href="logout.php">Logout</a></td>
           </tr>
         </table>
       </nav>

@@ -46,7 +46,7 @@
         <div class="bounty">3,000,000,000 Berry</div>
       </div>
       <div class="content-card">
-        <h2>Tentang Anime</h2>
+        <h2>Contact Us</h2>
         <p>
           One Piece dibuat oleh <span class="highlight">Eiichiro Oda</span> dan pertama kali terbit pada tahun
           <span class="highlight">1997</span>.
